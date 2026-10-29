@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meryne Ndjeyi — Portfolio · Social Content Strategist</title>
+<meta name="description" content="Portfolio of Meryne Ndjeyi — application for the Social Content Strategist V.I.E at Assouline, New York.">
+<meta property="og:title" content="Meryne Ndjeyi — Portfolio">
+<meta property="og:description" content="Application · Social Content Strategist · New York · V.I.E 2027">
+<meta property="og:image" content="assets/cv_poster.jpg">
+<link rel="icon" href="assets/meryne.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Jost:wght@300;400;500;600&amp;family=Caveat:wght@500&amp;display=swap">
+<style>
+body{margin:0;background:#F3EEE6}
+html{scroll-behavior:smooth}
+.phone{will-change:transform}
+.dot span{display:block;width:8px;height:8px;border-radius:8px;background:#C9BEAD;transition:all .4s}
+.dot[aria-pressed="true"] span{width:22px;background:#7A1F1A}
+a{color:#7A1F1A}a:hover{color:#4E120F}
+*{box-sizing:border-box}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes drop{0%{transform:translateY(-120%)}62%{transform:translateY(4%)}80%{transform:translateY(-1.5%)}100%{transform:translateY(0)}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes shine{0%,70%{transform:translateX(-160%) rotate(18deg)}100%{transform:translateX(260%) rotate(18deg)}}
+.rise{animation:rise 1s cubic-bezier(.2,.7,.2,1) both}
+.drop{animation:drop 1.25s cubic-bezier(.3,.9,.3,1) .25s both}
+.marquee-track{animation:marquee 38s linear infinite}
+.badge-btn{all:unset;display:block;cursor:grab;border-radius:14px}
+.badge-btn:focus-visible{outline:2px solid #7A1F1A;outline-offset:6px}
+.badge-shine{animation:shine 5.5s ease-in-out 1.8s infinite}
+.reel{display:block;text-decoration:none;color:#1C1A17}
+.reel .thumb img{transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .6s}
+.reel:hover .thumb img,.reel:focus-visible .thumb img{transform:scale(1.07);filter:saturate(1.08)}
+.reel .play{transition:transform .4s,background .4s}
+.reel:hover .play{transform:scale(1.12);background:#7A1F1A}
+.reel .cap{transition:color .3s}
+.reel:hover .cap{color:#7A1F1A}
+.tile{text-decoration:none;color:#1C1A17;transition:background .3s,color .3s,transform .3s}
+.tile:hover{background:#1C1A17;color:#F3EEE6;transform:translateY(-3px)}
+.tile:hover .tile-sub{color:#D9CFC0}
+.btn{transition:background .3s,color .3s}
+.btn-dark:hover{background:#7A1F1A;color:#F3EEE6}
+.btn-line:hover{background:#1C1A17;color:#F3EEE6}
+.badge-wrap{position:absolute;top:0;right:3%;z-index:5;display:flex;justify-content:center;pointer-events:none}
+.badge-wrap .badge-btn{pointer-events:auto}
+@media (max-width: 760px){.badge-wrap{position:static;margin:0 auto 40px;width:100%}}
+.stage{position:relative;width:300px;height:620px}
+.phone{position:absolute;inset:0;border-radius:46px;background:#1C1A17;padding:11px;box-shadow:0 40px 70px -30px rgba(28,26,23,0.6),inset 0 0 0 2px #3A3630;transition:transform .7s cubic-bezier(.3,.8,.25,1),opacity .7s,filter .7s;transform-origin:50% 80%}
+.phone-screen{height:100%;border-radius:36px;background:#FBF8F3;padding:46px 16px 18px;display:flex;flex-direction:column;gap:14px;overflow:hidden;position:relative}
+.island{position:absolute;top:12px;left:50%;width:92px;height:24px;margin-left:-46px;border-radius:14px;background:#1C1A17}
+.ctl{all:unset;width:44px;height:44px;border-radius:50%;border:1px solid #1C1A17;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#1C1A17;transition:background .3s,color .3s}
+.ctl:hover{background:#1C1A17;color:#F3EEE6}
+.ctl:focus-visible,.dot:focus-visible{outline:2px solid #7A1F1A;outline-offset:3px}
+.dot{all:unset;width:24px;height:44px;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.snaps{position:relative;height:620px}
+.pola{position:absolute;width:220px;transform:rotate(var(--r));transition:transform .5s cubic-bezier(.2,.8,.2,1),z-index 0s;z-index:1;cursor:pointer}
+.pola-in{background:#FFFFFF;padding:12px 12px 0;box-shadow:0 18px 30px -14px rgba(28,26,23,0.45),0 1px 2px rgba(28,26,23,0.12);display:flex;flex-direction:column;transition:box-shadow .5s}
+.pola{display:block;text-decoration:none}
+.pola:focus-visible{outline:2px solid #7A1F1A;outline-offset:6px}
+.pola-ph{position:relative}
+.pola-play{position:absolute;right:10px;bottom:10px;width:34px;height:34px;border-radius:50%;background:rgba(28,26,23,0.7);transition:background .3s,transform .3s}
+.pola-play::after{content:"";position:absolute;left:13px;top:10px;border-left:11px solid #FFFFFF;border-top:7px solid transparent;border-bottom:7px solid transparent}
+.pola:hover .pola-play{background:#7A1F1A;transform:scale(1.1)}
+.pola-in img{width:196px;height:196px;object-fit:cover;display:block;filter:saturate(.92) contrast(1.02);transition:filter .5s}
+.pola-in span{font-family:'Caveat',cursive;font-size:24px;color:#2E2A25;text-align:center;padding:8px 0 12px}
+.pola:hover{transform:rotate(0deg) scale(1.14) translateY(-12px);z-index:30}
+.pola:hover .pola-in{box-shadow:0 34px 50px -18px rgba(28,26,23,0.55)}
+.pola:hover img{filter:none}
+@keyframes toss{0%{opacity:0;transform:translate(40px,-160px) rotate(-22deg) scale(1.25)}70%{opacity:1}100%{opacity:1;transform:none}}
+[data-anim] .snaps .pola-in{opacity:0}
+[data-anim] .snaps[data-in] .pola-in{animation:toss 1s cubic-bezier(.2,.8,.25,1) both;animation-delay:var(--d)}
+@media (max-width: 900px){.snaps{height:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 12px;justify-items:center}.pola{position:static;width:auto;max-width:220px}.pola-in img{width:100%;height:auto;aspect-ratio:1/1}}
+@media (prefers-reduced-motion: reduce){[data-anim] .snaps .pola-in{opacity:1;animation:none}}
+[data-anim] [data-reveal]{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+[data-anim] [data-reveal][data-in]{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){.rise,.drop,.marquee-track,.badge-shine{animation:none}[data-anim] [data-reveal]{opacity:1;transform:none;transition:none}}
+</style>
+
+</head>
+<body>
+<div id="root" style="width: 100%; background: #F3EEE6; color: #1C1A17; font-family: 'Jost', system-ui, sans-serif; font-weight: 400; overflow: hidden">
+
+  <header style="max-width: 1240px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; border-bottom: 1px solid #D9CFC0">
+    <span style="font-family: 'Cormorant Garamond', serif; font-size: 22px; letter-spacing: 0.04em">Meryne Ndjeyi</span>
+    <nav aria-label="Sections" style="display: flex; flex-wrap: wrap; gap: 22px; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase">
+      <a href="#video" style="color: #1C1A17; text-decoration: none">Video CV</a>
+      <a href="#work" style="color: #1C1A17; text-decoration: none">Work</a>
+      <a href="#craft" style="color: #1C1A17; text-decoration: none">Client</a>
+      <a href="#luxury" style="color: #1C1A17; text-decoration: none">Luxury</a>
+      <a href="#path" style="color: #1C1A17; text-decoration: none">Path</a>
+      <a href="#contact" style="color: #7A1F1A; text-decoration: none">Contact</a>
+    </nav>
+  </header>
+
+  <section style="position: relative; max-width: 1240px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; align-items: stretch; gap: 32px">
+    <div style="position: relative; z-index: 1; flex: 1 1 100%; min-width: 0; padding: 88px 0 72px; display: flex; flex-direction: column; justify-content: center; gap: 28px">
+      <p class="rise" style="margin: 0; font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #5E574D; animation-delay: .1s">Application · Social Content Strategist · New York · V.I.E 2027</p>
+      <h1 class="rise" style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(56px, 9vw, 128px); line-height: 0.92; letter-spacing: -0.01em; animation-delay: .25s">Meryne<br><em style="font-weight: 400; color: #7A1F1A">Ndjeyi</em></h1>
+      <p class="rise" style="margin: 0; max-width: 560px; font-size: 19px; line-height: 1.6; font-weight: 300; color: #3A3630; animation-delay: .45s">Recent graduate of a Master's in Marketing &amp; Digital Communication at ISC Paris, I'm passionate about social content, storytelling and the worlds of luxury, culture and travel. I'm now looking for a V.I.E where I can put what I've learned into practice, keep growing, and bring my energy to a team with a strong creative identity.</p>
+      <div class="rise" style="display: flex; flex-wrap: wrap; gap: 12px; animation-delay: .6s">
+        <a class="btn btn-dark" href="#work" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 28px; background: #1C1A17; color: #F3EEE6; text-decoration: none; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase">See the work</a>
+        <a class="btn btn-line" href="mailto:meryne.ndjeyi@outlook.com" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 28px; border: 1px solid #1C1A17; color: #1C1A17; text-decoration: none; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase">Write to me</a>
+      </div>
+      <div class="rise" style="display: flex; flex-wrap: wrap; gap: 36px; padding-top: 20px; border-top: 1px solid #D9CFC0; animation-delay: .75s">
+        <div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Cormorant Garamond', serif; font-size: 40px; line-height: 1">26</span><span style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #5E574D">months running a brand<br>account end to end</span></div>
+        <div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Cormorant Garamond', serif; font-size: 40px; line-height: 1">50+</span><span style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #5E574D">events captured<br>a year</span></div>
+        <div style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Cormorant Garamond', serif; font-size: 40px; line-height: 1">3</span><span style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #5E574D">luxury houses<br>on the shop floor</span></div>
+      </div>
+    </div>
+
+    <div class="badge-wrap">
+      <div class="drop" style="display: flex; justify-content: center">
+        <div id="badge" style="display: flex; flex-direction: column; align-items: center; transform-origin: 50% 0; will-change: transform">
+          <div aria-hidden="true" style="width: 30px; height: 210px; background: #7A1F1A; display: flex; justify-content: center; overflow: hidden; box-shadow: inset -6px 0 0 rgba(0,0,0,0.12)">
+            <span style="writing-mode: vertical-rl; font-family: 'Cormorant Garamond', serif; font-size: 13px; letter-spacing: 0.5em; color: #F3EEE6; white-space: nowrap; padding-top: 10px">ASSOULINE · ASSOULINE · ASSOULINE</span>
+          </div>
+          <div aria-hidden="true" style="width: 44px; height: 16px; margin-top: -2px; border-radius: 3px 3px 8px 8px; background: linear-gradient(180deg, #E4E2DD, #9C978E); box-shadow: 0 2px 3px rgba(0,0,0,0.25)"></div>
+          <div aria-hidden="true" style="width: 14px; height: 22px; margin-top: -2px; border: 3px solid #A8A39A; border-radius: 8px"></div>
+          <button class="badge-btn" type="button" aria-label="Meryne Ndjeyi's Assouline badge — hover or tap to make it swing" id="badgeBtn" style="margin-top: -6px">
+            <div style="position: relative; width: 300px; background: #FBF8F3; border-radius: 14px; overflow: hidden; box-shadow: 0 30px 60px -20px rgba(28,26,23,0.45), 0 2px 0 rgba(28,26,23,0.06); display: flex; flex-direction: column">
+              <div style="background: #7A1F1A; padding: 30px 20px 18px; display: flex; flex-direction: column; align-items: center; gap: 6px; position: relative">
+                <div style="position: absolute; top: 9px; left: 50%; width: 46px; height: 9px; margin-left: -23px; border-radius: 6px; background: #F3EEE6; box-shadow: inset 0 2px 2px rgba(0,0,0,0.25)"></div>
+                <span style="font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 30px; letter-spacing: 0.32em; padding-left: 0.32em; color: #F3EEE6">ASSOULINE</span>
+                <span style="font-size: 10px; letter-spacing: 0.3em; color: #E9D9C9; text-transform: uppercase">Maison · New York</span>
+              </div>
+              <div style="padding: 22px 24px 20px; display: flex; flex-direction: column; align-items: center; gap: 14px">
+                <div style="width: 176px; height: 160px; background: #FFFFFF; border: 1px solid #D9CFC0; padding: 6px">
+                  <img src="assets/meryne.png" alt="Portrait of Meryne Ndjeyi" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; display: block">
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 4px">
+                  <span style="font-family: 'Cormorant Garamond', serif; font-size: 27px; font-weight: 600; letter-spacing: 0.06em; color: #1C1A17">MERYNE NDJEYI</span>
+                  <span style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: #5E574D">Social Content Strategist</span>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: space-between; padding-top: 12px; border-top: 1px solid #E3DACB; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #5E574D">
+                  <span>V.I.E · Jan 2027</span><span>Ref VIE247530</span>
+                </div>
+                <div aria-hidden="true" style="width: 100%; height: 30px; background: repeating-linear-gradient(90deg, #1C1A17 0 2px, transparent 2px 4px, #1C1A17 4px 5px, transparent 5px 9px, #1C1A17 9px 12px, transparent 12px 14px)"></div>
+                <span style="align-self: center; font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: #7A1F1A; border: 1px solid #7A1F1A; padding: 4px 12px; border-radius: 20px">Candidate</span>
+              </div>
+              <div class="badge-shine" aria-hidden="true" style="position: absolute; top: -20%; left: 0; width: 70px; height: 140%; background: rgba(255,255,255,0.35); pointer-events: none"></div>
+            </div>
+          </button>
+          <span style="margin-top: 22px; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #5E574D">Hover me</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div aria-hidden="true" style="border-top: 1px solid #1C1A17; border-bottom: 1px solid #1C1A17; background: #1C1A17; color: #F3EEE6; overflow: hidden; padding: 16px 0">
+    <div class="marquee-track" style="display: flex; width: max-content; gap: 0">
+      <span style="white-space: nowrap; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 26px; padding-right: 40px">Hooks · Scripts · Shot lists · Captions · Creator briefs · Storyboards · Moodboards · Instagram · TikTok · YouTube Shorts · Pinterest · LinkedIn · Books · Travel · Objects · People &amp; places ·&nbsp;</span>
+      <span style="white-space: nowrap; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 26px; padding-right: 40px">Hooks · Scripts · Shot lists · Captions · Creator briefs · Storyboards · Moodboards · Instagram · TikTok · YouTube Shorts · Pinterest · LinkedIn · Books · Travel · Objects · People &amp; places ·&nbsp;</span>
+    </div>
+  </div>
+
+  <section id="video" style="max-width: 1240px; margin: 0 auto; padding: 110px 24px 0; display: flex; flex-direction: column; gap: 36px">
+    <div data-reveal="" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px">
+        <span style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #7A1F1A">Watch first — Video CV</span>
+        <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(40px, 5vw, 64px); line-height: 1">Application for V.I.E&nbsp;<br><em style="color: rgb(122, 31, 26)">Edition Assouline</em></h2>
+      </div>
+      <span style="font-family: 'Caveat', cursive; font-size: 24px; color: #5E574D">one minute, sound on ↓</span>
+    </div>
+    <div data-reveal="" style="background: #1C1A17; padding: 14px; border-radius: 6px; box-shadow: 0 40px 80px -40px rgba(28,26,23,0.6)">
+      <video src="assets/cv_video.mp4" poster="assets/cv_poster.jpg" controls="" playsinline="" preload="metadata" aria-label="Meryne Ndjeyi's video CV for the Assouline V.I.E application" style="display: block; width: 100%; aspect-ratio: 16 / 9; background: #000000; border-radius: 3px"></video>
+    </div>
+  </section>
+
+  <section id="work" style="max-width: 1240px; margin: 0 auto; padding: 110px 24px 40px; display: flex; flex-direction: column; gap: 44px">
+    <div data-reveal="" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px">
+        <span style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #7A1F1A">01 — Selected work</span>
+        <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(40px, 5vw, 64px); line-height: 1">Recurring formats I built for AFD.TECH</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.65; font-weight: 300; color: #3A3630">At Accenture I ran the social accounts of its subsidiary AFD.TECH end to end: editorial line, formats, hooks, captions, scripts, shooting and editing. Reported monthly on saves, shares, watch time and completion to decide what to repeat or stop.</p>
+      </div>
+      <a href="https://www.instagram.com/afd.tech/" target="_blank" rel="noopener" style="font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: #1C1A17; padding-bottom: 4px; border-bottom: 1px solid #1C1A17; text-decoration: none">Full feed on Instagram ↗</a>
+    </div>
+
+    <div data-reveal="" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(196px, 1fr)); gap: 20px">
+      
+        <a class="reel" href="https://www.instagram.com/afd.tech/reel/DeguaXBysdy/" target="_blank" rel="noopener" aria-label="Inside — watch the reel on Instagram (opens in a new tab)" style="display: flex; flex-direction: column; gap: 14px">
+          <div class="thumb" style="position: relative; aspect-ratio: 9 / 16; overflow: hidden; background: #1C1A17; border-radius: 10px">
+            <img src="assets/HQ_DeguaXBysdy.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block">
+            <div style="position: absolute; top: 12px; left: 12px; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #FFFFFF; background: rgba(28,26,23,0.62); padding: 5px 9px; border-radius: 20px">Reel</div>
+            <div class="play" style="position: absolute; right: 12px; bottom: 12px; width: 44px; height: 44px; border-radius: 50%; background: rgba(28,26,23,0.72); display: flex; align-items: center; justify-content: center">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"><path d="M5 3.2v9.6L12.6 8z" fill="#FFFFFF"></path></svg>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <span class="cap" style="font-family: 'Cormorant Garamond', serif; font-size: 24px; line-height: 1.1">Inside</span>
+            <span style="font-size: 14px; line-height: 1.5; color: #5E574D; font-weight: 300">Portrait series: one consultant, one hook, one story.</span>
+          </div>
+        </a>
+      
+        <a class="reel" href="https://www.instagram.com/afd.tech/reel/Dd6F7vljW4a/" target="_blank" rel="noopener" aria-label="Tech Days — watch the reel on Instagram (opens in a new tab)" style="display: flex; flex-direction: column; gap: 14px">
+          <div class="thumb" style="position: relative; aspect-ratio: 9 / 16; overflow: hidden; background: #1C1A17; border-radius: 10px">
+            <img src="assets/HQ_Dd6F7vljW4a.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block">
+            <div style="position: absolute; top: 12px; left: 12px; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #FFFFFF; background: rgba(28,26,23,0.62); padding: 5px 9px; border-radius: 20px">Reel</div>
+            <div class="play" style="position: absolute; right: 12px; bottom: 12px; width: 44px; height: 44px; border-radius: 50%; background: rgba(28,26,23,0.72); display: flex; align-items: center; justify-content: center">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"><path d="M5 3.2v9.6L12.6 8z" fill="#FFFFFF"></path></svg>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <span class="cap" style="font-family: 'Cormorant Garamond', serif; font-size: 24px; line-height: 1.1">Tech Days</span>
+            <span style="font-size: 14px; line-height: 1.5; color: #5E574D; font-weight: 300">An expert talk turned into a vertical teaser.</span>
+          </div>
+        </a>
+      
+        <a class="reel" href="https://www.instagram.com/afd.tech/reel/DakYFdJydke/" target="_blank" rel="noopener" aria-label="Rencontrez — watch the reel on Instagram (opens in a new tab)" style="display: flex; flex-direction: column; gap: 14px">
+          <div class="thumb" style="position: relative; aspect-ratio: 9 / 16; overflow: hidden; background: #1C1A17; border-radius: 10px">
+            <img src="assets/HQ_DakYFdJydke.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block">
+            <div style="position: absolute; top: 12px; left: 12px; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #FFFFFF; background: rgba(28,26,23,0.62); padding: 5px 9px; border-radius: 20px">Reel</div>
+            <div class="play" style="position: absolute; right: 12px; bottom: 12px; width: 44px; height: 44px; border-radius: 50%; background: rgba(28,26,23,0.72); display: flex; align-items: center; justify-content: center">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"><path d="M5 3.2v9.6L12.6 8z" fill="#FFFFFF"></path></svg>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <span class="cap" style="font-family: 'Cormorant Garamond', serif; font-size: 24px; line-height: 1.1">Rencontrez</span>
+            <span style="font-size: 14px; line-height: 1.5; color: #5E574D; font-weight: 300">Two-part people series, built to be saved and shared.</span>
+          </div>
+        </a>
+      
+        <a class="reel" href="https://www.instagram.com/afd.tech/reel/DaPxVB-ykYl/" target="_blank" rel="noopener" aria-label="Launchpad — watch the reel on Instagram (opens in a new tab)" style="display: flex; flex-direction: column; gap: 14px">
+          <div class="thumb" style="position: relative; aspect-ratio: 9 / 16; overflow: hidden; background: #1C1A17; border-radius: 10px">
+            <img src="assets/HQ_DaPxVB-ykYl.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block">
+            <div style="position: absolute; top: 12px; left: 12px; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #FFFFFF; background: rgba(28,26,23,0.62); padding: 5px 9px; border-radius: 20px">Reel</div>
+            <div class="play" style="position: absolute; right: 12px; bottom: 12px; width: 44px; height: 44px; border-radius: 50%; background: rgba(28,26,23,0.72); display: flex; align-items: center; justify-content: center">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"><path d="M5 3.2v9.6L12.6 8z" fill="#FFFFFF"></path></svg>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <span class="cap" style="font-family: 'Cormorant Garamond', serif; font-size: 24px; line-height: 1.1">Launchpad</span>
+            <span style="font-size: 14px; line-height: 1.5; color: #5E574D; font-weight: 300">Onboarding told through a duo, not a slide deck.</span>
+          </div>
+        </a>
+      
+        <a class="reel" href="https://www.instagram.com/afd.tech/reel/DZxb1KuNrCt/" target="_blank" rel="noopener" aria-label="Team moments — watch the reel on Instagram (opens in a new tab)" style="display: flex; flex-direction: column; gap: 14px">
+          <div class="thumb" style="position: relative; aspect-ratio: 9 / 16; overflow: hidden; background: #1C1A17; border-radius: 10px">
+            <img src="assets/HQ_DZxb1KuNrCt.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block">
+            <div style="position: absolute; top: 12px; left: 12px; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: #FFFFFF; background: rgba(28,26,23,0.62); padding: 5px 9px; border-radius: 20px">Reel</div>
+            <div class="play" style="position: absolute; right: 12px; bottom: 12px; width: 44px; height: 44px; border-radius: 50%; background: rgba(28,26,23,0.72); display: flex; align-items: center; justify-content: center">
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16"><path d="M5 3.2v9.6L12.6 8z" fill="#FFFFFF"></path></svg>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <span class="cap" style="font-family: 'Cormorant Garamond', serif; font-size: 24px; line-height: 1.1">Team moments</span>
+            <span style="font-size: 14px; line-height: 1.5; color: #5E574D; font-weight: 300">Behind-the-scenes capture at an internal event.</span>
+          </div>
+        </a>
+      
+    </div>
+
+    <div data-reveal="" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1px; background: #D9CFC0; border: 1px solid #D9CFC0"><a class="tile" href="https://www.instagram.com/afd.tech/" target="_blank" rel="noopener" style="background: rgb(243, 238, 230); padding: 30px; display: flex; flex-direction: column; gap: 10px">
+        <span style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgb(122, 31, 26)">Instagram</span>
+        <span style="font-family: &quot;Cormorant Garamond&quot;, serif; font-size: 28px">@afd.tech ↗</span>
+        <span class="tile-sub" style="font-size: 14px; line-height: 1.55; color: rgb(94, 87, 77); font-weight: 300">Reels, carousels and stories written, shot and edited in-house.</span>
+      </a>
+      <a class="tile" href="https://www.linkedin.com/company/afd-technologies/" target="_blank" rel="noopener" style="background: rgb(243, 238, 230); padding: 30px; display: flex; flex-direction: column; gap: 10px">
+        <span style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgb(122, 31, 26)">LinkedIn</span>
+        <span style="font-family: &quot;Cormorant Garamond&quot;, serif; font-size: 28px">AFD.TECH ↗</span>
+        <span class="tile-sub" style="font-size: 14px; line-height: 1.55; color: rgb(94, 87, 77); font-weight: 300">Employer-brand formats, people series and event coverage.</span>
+      </a>
+      <a class="tile" href="https://fr.linkedin.com/company/accenture-france" target="_blank" rel="noopener" style="background: rgb(243, 238, 230); padding: 30px; display: flex; flex-direction: column; gap: 10px">
+        <span style="font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgb(122, 31, 26)">LinkedIn</span>
+        <span style="font-family: &quot;Cormorant Garamond&quot;, serif; font-size: 28px">Accenture France ↗</span>
+        <span class="tile-sub" style="font-size: 14px; line-height: 1.55; color: rgb(94, 87, 77); font-weight: 300">Photo shoots and video for Accenture — including films made to pitch partnerships to luxury houses.</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="craft" style="max-width: 1240px; margin: 0 auto; padding: 100px 24px 40px; display: flex; flex-direction: column; gap: 36px">
+    <div data-reveal="" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px">
+        <span style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #7A1F1A">02 — Currently, with Sky Social Agency</span>
+        <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(40px, 5vw, 64px); line-height: 1">@arielle.kw : growing a makeup artist's audience</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.65; font-weight: 300; color: #3A3630">My current client is a Paris-based makeup artist with a double goal: growing as a beauty and travel creator, and bringing new clients to her makeup business. She films; I plan her shoot days and write what she shoots, from concepts to scripts, then edit every video. I also run her content strategy, media planning and brand partnerships, handling collaborations and gifting directly from her inbox.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 6px">
+          <a class="btn btn-line" href="https://www.instagram.com/arielle.kw/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border: 1px solid #1C1A17; color: #1C1A17; text-decoration: none; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase">Instagram ↗</a>
+          <a class="btn btn-line" href="https://www.tiktok.com/@arielle.kw" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border: 1px solid #1C1A17; color: #1C1A17; text-decoration: none; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase">TikTok ↗</a>
+        </div>
+      </div>
+      <span style="font-family: 'Caveat', cursive; font-size: 24px; color: #5E574D">tap a snapshot to watch ↓</span>
+    </div>
+    <div class="snaps" data-reveal="">
+      <a class="pola" href="https://www.instagram.com/arielle.kw/reel/DexJ-Mxuvr6/" target="_blank" rel="noopener" aria-label="Soft glam reel by @arielle.kw on Instagram" style="left: 0%; top: 30px; --r: -7deg; --d: .05s"><div class="pola-in"><div class="pola-ph"><img src="assets/AK_DexJ-Mxuvr6.jpg" alt=""><i class="pola-play"></i></div><span>soft glam</span></div></a>
+      <a class="pola" href="https://www.instagram.com/arielle.kw/reel/Dc9AZ8vO0FQ/" target="_blank" rel="noopener" aria-label="Travel prep reel by @arielle.kw on Instagram" style="left: 12%; top: 300px; --r: 5deg; --d: .18s"><div class="pola-in"><div class="pola-ph"><img src="assets/AK_Dc9AZ8vO0FQ.jpg" alt=""><i class="pola-play"></i></div><span>travel prep</span></div></a>
+      <a class="pola" href="https://www.instagram.com/arielle.kw/reel/DcN6ifdulJm/" target="_blank" rel="noopener" aria-label="Blush tutorial reel by @arielle.kw on Instagram" style="left: 24%; top: 10px; --r: 4deg; --d: .31s"><div class="pola-in"><div class="pola-ph"><img src="assets/AK_DcN6ifdulJm.jpg" alt=""><i class="pola-play"></i></div><span>blush tutorial</span></div></a>
+      <a class="pola" href="https://www.instagram.com/arielle.kw/reel/DcaukX1uaOE/" target="_blank" rel="noopener" aria-label="K-beauty evening routine reel by @arielle.kw on Instagram" style="left: 35%; top: 280px; --r: -6deg; --d: .44s"><div class="pola-in"><div class="pola-ph"><img src="assets/AK_DcaukX1uaOE.jpg" alt=""><i class="pola-play"></i></div><span>K-beauty routine</span></div></a>
+      <a class="pola" href="https://www.instagram.com/arielle.kw/reel/Dck-j9jOYFn/" target="_blank" rel="noopener" aria-label="Perfume reel by @arielle.kw on Instagram" style="left: 47%; top: 40px; --r: -2deg; --d: .57s"><div class="pola-in"><div class="pola-ph"><img src="assets/AK_Dck-j9jOYFn.jpg" alt=""><i class="pola-play"></i></div><span>red &amp; perfume</span></div></a>
+      <a class="pola" href="https://www.instagram.com/arielle.kw/p/DeAa9pejtr_/" target="_blank" rel="noopener" aria-label="September photo dump by @arielle.kw on Instagram" style="left: 58%; top: 300px; --r: 7deg; --d: .70s"><div class="pola-in"><div class="pola-ph"><img src="assets/AK_DeAa9pejtr_.jpg" alt=""></div><span>sept dump</span></div></a>
+      <a class="pola" href="https://www.instagram.com/arielle.kw/reel/DeaDZuzu5i4/" target="_blank" rel="noopener" aria-label="Lip combo of the day reel by @arielle.kw on Instagram" style="left: 69%; top: 20px; --r: -5deg; --d: .83s"><div class="pola-in"><div class="pola-ph"><img src="assets/AK_DeaDZuzu5i4.jpg" alt=""><i class="pola-play"></i></div><span>lip combo of the day</span></div></a>
+      <a class="pola" href="https://www.instagram.com/arielle.kw/reel/DbTlDjSuy7K/" target="_blank" rel="noopener" aria-label="Brand collaboration reel by @arielle.kw on Instagram" style="left: 80%; top: 280px; --r: 3deg; --d: .96s"><div class="pola-in"><div class="pola-ph"><img src="assets/AK_DbTlDjSuy7K.jpg" alt=""><i class="pola-play"></i></div><span>brand collab</span></div></a>
+    </div>
+  </section>
+
+  <section id="luxury" style="margin-top: 100px; background: #1C1A17; color: #F3EEE6">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 100px 24px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+      <div data-reveal="" style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+        <span style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #D9B9A8">03 — On the shop floor</span>
+        <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(40px, 5vw, 64px); line-height: 1">Before content, clients.</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.7; font-weight: 300; color: #D9CFC0">As a luxury sales advisor I learned how a client looks at an object, what makes them stop, and the vocabulary a Maison never breaks. That instinct is what I bring to every caption and every cut.</p>
+      </div>
+      <div data-reveal="" style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 22px 0; border-top: 1px solid #4A453D">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: clamp(34px, 4vw, 52px); letter-spacing: 0.08em">JACQUEMUS</span>
+          <span style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #BDB2A2">Luxury sales advisor</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 22px 0; border-top: 1px solid #4A453D">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: clamp(34px, 4vw, 52px); letter-spacing: 0.08em">LANCEL</span>
+          <span style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #BDB2A2">Luxury sales advisor</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 22px 0; border-top: 1px solid #4A453D; border-bottom: 1px solid #4A453D">
+          <span style="font-family: 'Cormorant Garamond', serif; font-size: clamp(34px, 4vw, 52px); letter-spacing: 0.08em">HUGO BOSS</span>
+          <span style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #BDB2A2">Luxury sales advisor</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="path" style="max-width: 1240px; margin: 0 auto; padding: 110px 24px 40px; display: flex; flex-direction: column; gap: 48px">
+    <div data-reveal="" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px">
+      <div style="display: flex; flex-direction: column; gap: 14px">
+        <span style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #7A1F1A">04 — Path</span>
+        <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(40px, 5vw, 64px); line-height: 1">Experience</h2>
+      </div>
+      <span style="font-family: 'Caveat', cursive; font-size: 24px; color: #5E574D">tap the arrows to read on →</span>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 48px">
+    <div data-reveal="" style="flex: 1 1 260px; min-width: 0; max-width: 330px; display: flex; flex-direction: column; gap: 34px">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <span style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #5E574D">Education</span>
+        <span style="font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1.25">ISC Paris — Master's, Marketing &amp; Digital Communication <em style="color: #5E574D">2024–2026</em></span>
+        <span style="font-family: 'Cormorant Garamond', serif; font-size: 22px; line-height: 1.25">University of California, Riverside — International Management <em style="color: #5E574D">2023–2024</em></span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px">
+        <span style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #5E574D">Languages</span>
+        <span style="font-size: 15px; line-height: 1.7; font-weight: 300">French — native<br>English — C1, a year in California<br>Spanish — basics</span>
+      </div>
+    </div>
+
+    <div data-reveal="" style="flex: 0 0 340px; display: flex; flex-direction: column; align-items: center; gap: 26px; margin: 0 auto">
+      <div class="stage">
+        
+          <div class="phone" data-i="0">
+            <div class="phone-screen">
+              <div class="island"></div>
+              <div style="display: flex; align-items: center; gap: 10px; padding: 0 2px">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: #7A1F1A; color: #F3EEE6; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 18px; flex: 0 0 auto">A</div>
+                <div style="display: flex; flex-direction: column; gap: 1px; min-width: 0">
+                  <span style="font-size: 14px; font-weight: 500; color: #1C1A17">Accenture · AFD.TECH</span>
+                  <span style="font-size: 11px; color: #5E574D">Paris</span>
+                </div>
+              </div>
+              <div style="aspect-ratio: 4 / 3; background: #1C1A17; display: flex; flex-direction: column; justify-content: flex-end; padding: 16px; gap: 6px; border-radius: 6px">
+                <span style="font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #D9B9A8">Aug 2024 — Oct 2026</span>
+                <span style="font-family: 'Cormorant Garamond', serif; font-size: 25px; line-height: 1.05; color: #F3EEE6">Social Media &amp; Content — Apprenticeship</span>
+              </div>
+              <div aria-hidden="true" style="display: flex; gap: 14px; padding: 0 2px">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1A17" stroke-width="1.8"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1A17" stroke-width="1.8"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12z"></path></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1A17" stroke-width="1.8"><path d="M21 4 10 14M21 4l-7 17-4-7-7-4z"></path></svg>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; padding: 0 2px">
+                
+                  <span style="font-size: 12.5px; line-height: 1.5; color: #3A3630">— Ran AFD.TECH&#x27;s LinkedIn and Instagram end to end: editorial line, formats, hooks, captions, scripts, shooting, editing.</span>
+                
+                  <span style="font-size: 12.5px; line-height: 1.5; color: #3A3630">— Produced Accenture&#x27;s video content, including films pitching partnerships to luxury houses.</span>
+                
+                  <span style="font-size: 12.5px; line-height: 1.5; color: #3A3630">— Monthly reporting on saves, shares, watch time and completion. Content capture at 50+ events a year.</span>
+                
+              </div>
+            </div>
+          </div>
+        
+          <div class="phone" data-i="1">
+            <div class="phone-screen">
+              <div class="island"></div>
+              <div style="display: flex; align-items: center; gap: 10px; padding: 0 2px">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: #7A1F1A; color: #F3EEE6; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 18px; flex: 0 0 auto">S</div>
+                <div style="display: flex; flex-direction: column; gap: 1px; min-width: 0">
+                  <span style="font-size: 14px; font-weight: 500; color: #1C1A17">Sky Social Agency</span>
+                  <span style="font-size: 11px; color: #5E574D">Paris · Founder</span>
+                </div>
+              </div>
+              <div style="aspect-ratio: 4 / 3; background: #1C1A17; display: flex; flex-direction: column; justify-content: flex-end; padding: 16px; gap: 6px; border-radius: 6px">
+                <span style="font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #D9B9A8">Feb 2025 — Present</span>
+                <span style="font-family: 'Cormorant Garamond', serif; font-size: 25px; line-height: 1.05; color: #F3EEE6">Founder, social content studio</span>
+              </div>
+              <div aria-hidden="true" style="display: flex; gap: 14px; padding: 0 2px">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1A17" stroke-width="1.8"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1A17" stroke-width="1.8"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12z"></path></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1A17" stroke-width="1.8"><path d="M21 4 10 14M21 4l-7 17-4-7-7-4z"></path></svg>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; padding: 0 2px">
+                
+                  <span style="font-size: 12.5px; line-height: 1.5; color: #3A3630">— Social content for brands and institutions on Instagram, TikTok and LinkedIn, from planning to analytics.</span>
+                
+                  <span style="font-size: 12.5px; line-height: 1.5; color: #3A3630">— Creator management for micro-influencers, including makeup artist @arielle.kw.</span>
+                
+                  <span style="font-size: 12.5px; line-height: 1.5; color: #3A3630">— Communication abroad for institutions including the Caisse des Dépôts.</span>
+                
+              </div>
+            </div>
+          </div>
+        
+          <div class="phone" data-i="2">
+            <div class="phone-screen">
+              <div class="island"></div>
+              <div style="display: flex; align-items: center; gap: 10px; padding: 0 2px">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: #7A1F1A; color: #F3EEE6; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 18px; flex: 0 0 auto">AK</div>
+                <div style="display: flex; flex-direction: column; gap: 1px; min-width: 0">
+                  <span style="font-size: 14px; font-weight: 500; color: #1C1A17">@arielle.kw</span>
+                  <span style="font-size: 11px; color: #5E574D">Makeup artist · Instagram &amp; TikTok</span>
+                </div>
+              </div>
+              <div style="aspect-ratio: 4 / 3; background: #1C1A17; display: flex; flex-direction: column; justify-content: flex-end; padding: 16px; gap: 6px; border-radius: 6px">
+                <span style="font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #D9B9A8">Current client · Sky Social</span>
+                <span style="font-family: 'Cormorant Garamond', serif; font-size: 25px; line-height: 1.05; color: #F3EEE6">Strategy, scripts, editing &amp; partnerships</span>
+              </div>
+              <div aria-hidden="true" style="display: flex; gap: 14px; padding: 0 2px">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1A17" stroke-width="1.8"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1A17" stroke-width="1.8"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12z"></path></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1A17" stroke-width="1.8"><path d="M21 4 10 14M21 4l-7 17-4-7-7-4z"></path></svg>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; padding: 0 2px">
+                
+                  <span style="font-size: 12.5px; line-height: 1.5; color: #3A3630">— Double goal: beauty &amp; travel creator, and new clients for her makeup business.</span>
+                
+                  <span style="font-size: 12.5px; line-height: 1.5; color: #3A3630">— Content strategy and media planning for Instagram and TikTok.</span>
+                
+                  <span style="font-size: 12.5px; line-height: 1.5; color: #3A3630">— Plan her filming days and write her scripts; she films, I edit every video.</span>
+                
+                  <span style="font-size: 12.5px; line-height: 1.5; color: #3A3630">— Brand partnerships: collaborations and gifting managed from her inbox.</span>
+                
+              </div>
+            </div>
+          </div>
+        
+          <div class="phone" data-i="3">
+            <div class="phone-screen">
+              <div class="island"></div>
+              <div style="display: flex; align-items: center; gap: 10px; padding: 0 2px">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: #7A1F1A; color: #F3EEE6; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 18px; flex: 0 0 auto">D</div>
+                <div style="display: flex; flex-direction: column; gap: 1px; min-width: 0">
+                  <span style="font-size: 14px; font-weight: 500; color: #1C1A17">DpointGroup</span>
+                  <span style="font-size: 11px; color: #5E574D">Barcelona</span>
+                </div>
+              </div>
+              <div style="aspect-ratio: 4 / 3; background: #1C1A17; display: flex; flex-direction: column; justify-content: flex-end; padding: 16px; gap: 6px; border-radius: 6px">
+                <span style="font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: #D9B9A8">Jan — Jun 2023</span>
+                <span style="font-family: 'Cormorant Garamond', serif; font-size: 25px; line-height: 1.05; color: #F3EEE6">Digital Communication &amp; Event Project Officer</span>
+              </div>
+              <div aria-hidden="true" style="display: flex; gap: 14px; padding: 0 2px">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1A17" stroke-width="1.8"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1A17" stroke-width="1.8"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12z"></path></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1C1A17" stroke-width="1.8"><path d="M21 4 10 14M21 4l-7 17-4-7-7-4z"></path></svg>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; padding: 0 2px">
+                
+                  <span style="font-size: 12.5px; line-height: 1.5; color: #3A3630">— Social media and content creation in a Spanish-speaking team: planning, community, campaigns.</span>
+                
+                  <span style="font-size: 12.5px; line-height: 1.5; color: #3A3630">— Advertising campaigns and client events, from concept to delivery.</span>
+                
+              </div>
+            </div>
+          </div>
+        
+      </div>
+      <div style="display: flex; align-items: center; gap: 14px">
+        <button class="ctl" type="button" aria-label="Previous experience" id="prevBtn"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 5l-7 7 7 7"></path></svg></button>
+        <button class="dot" type="button" data-dot="0" aria-label="Show Accenture · AFD.TECH"><span></span></button><button class="dot" type="button" data-dot="1" aria-label="Show Sky Social Agency"><span></span></button><button class="dot" type="button" data-dot="2" aria-label="Show @arielle.kw"><span></span></button><button class="dot" type="button" data-dot="3" aria-label="Show DpointGroup"><span></span></button>
+        <button class="ctl" type="button" aria-label="Next experience" id="nextBtn"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 5l7 7-7 7"></path></svg></button>
+      </div>
+    </div>
+
+    <div data-reveal="" style="flex: 1 1 260px; min-width: 0; max-width: 330px; display: flex; flex-direction: column; gap: 34px">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <span style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #5E574D">Toolkit</span>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          
+            <span style="font-size: 13px; padding: 7px 14px; border: 1px solid #C9BEAD; border-radius: 30px">CapCut</span>
+          
+            <span style="font-size: 13px; padding: 7px 14px; border: 1px solid #C9BEAD; border-radius: 30px">DaVinci</span>
+          
+            <span style="font-size: 13px; padding: 7px 14px; border: 1px solid #C9BEAD; border-radius: 30px">Adobe CC</span>
+          
+            <span style="font-size: 13px; padding: 7px 14px; border: 1px solid #C9BEAD; border-radius: 30px">Canva</span>
+          
+            <span style="font-size: 13px; padding: 7px 14px; border: 1px solid #C9BEAD; border-radius: 30px">Figma</span>
+          
+            <span style="font-size: 13px; padding: 7px 14px; border: 1px solid #C9BEAD; border-radius: 30px">Google Analytics</span>
+          
+            <span style="font-size: 13px; padding: 7px 14px; border: 1px solid #C9BEAD; border-radius: 30px">Instagram</span>
+          
+            <span style="font-size: 13px; padding: 7px 14px; border: 1px solid #C9BEAD; border-radius: 30px">TikTok</span>
+          
+            <span style="font-size: 13px; padding: 7px 14px; border: 1px solid #C9BEAD; border-radius: 30px">YouTube Shorts</span>
+          
+            <span style="font-size: 13px; padding: 7px 14px; border: 1px solid #C9BEAD; border-radius: 30px">Pinterest</span>
+          
+            <span style="font-size: 13px; padding: 7px 14px; border: 1px solid #C9BEAD; border-radius: 30px">LinkedIn</span>
+          
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <span style="font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: #5E574D">Expertise</span>
+        <span style="font-size: 15px; line-height: 1.7; font-weight: 300">Social-first content &amp; formats<br>Hooks, captions &amp; scripts<br>Shot lists &amp; light editing<br>Creator briefing &amp; management</span>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="contact" style="max-width: 1240px; margin: 0 auto; padding: 120px 24px 60px">
+    <div data-reveal="" style="display: flex; flex-direction: column; gap: 30px; border-top: 1px solid #1C1A17; padding-top: 60px">
+      <span style="font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; color: #7A1F1A">05 — Contact</span>
+      <h2 style="margin: 0; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: clamp(48px, 8vw, 112px); line-height: 0.95">Paris, ready for<br><em style="color: #7A1F1A">New York.</em></h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 14px 40px; font-size: 16px">
+        <a href="mailto:meryne.ndjeyi@outlook.com" style="color: #1C1A17">meryne.ndjeyi@outlook.com</a>
+        <a href="tel:+33669708046" style="color: #1C1A17">+33 6 69 70 80 46</a>
+        <a href="assets/Meryne_Ndjeyi_CV.pdf" target="_blank" rel="noopener" style="color: #7A1F1A">Download my CV (PDF) ↗</a>
+      </div>
+    </div>
+    <p style="margin: 80px 0 0; font-size: 12px; color: #5E574D">Portfolio prepared by Meryne Ndjeyi for the Assouline Social Content Strategist application (V.I.E, ref. VIE247530).</p>
+  </section>
+
+</div>
+<script>
+(function(){
+  var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Badge pendulum
+  var badge = document.getElementById('badge'), btn = document.getElementById('badgeBtn');
+  var theta = 0, omega = 0, raf = null;
+  function step(){
+    omega += -0.014 * theta - 0.06 * omega; theta += omega;
+    if (theta > 0.22) { theta = 0.22; omega *= -0.3; }
+    if (theta < -0.22) { theta = -0.22; omega *= -0.3; }
+    if (Math.abs(theta) < 0.0004 && Math.abs(omega) < 0.0004) { theta = 0; omega = 0; raf = null; badge.style.transform = 'rotate(0rad)'; return; }
+    badge.style.transform = 'rotate(' + theta.toFixed(4) + 'rad)';
+    raf = requestAnimationFrame(step);
+  }
+  function kick(v){ if (reduced) return; omega += v; if (!raf) raf = requestAnimationFrame(step); }
+  if (btn && badge) {
+    btn.addEventListener('mousemove', function(e){ kick(Math.max(-0.004, Math.min(0.004, (e.movementX || 0) * 0.0002))); });
+    btn.addEventListener('mouseenter', function(){ kick((Math.random() > 0.5 ? 1 : -1) * 0.006); });
+    btn.addEventListener('click', function(){ kick((Math.random() > 0.5 ? 1 : -1) * 0.01); });
+    setTimeout(function(){ kick(0.012); }, 1250);
+  }
+  // Scroll reveal
+  var root = document.getElementById('root');
+  if (root && 'IntersectionObserver' in window && !reduced) {
+    var items = root.querySelectorAll('[data-reveal]');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting) { en.target.setAttribute('data-in', ''); io.unobserve(en.target); } });
+    }, { threshold: 0.12 });
+    items.forEach(function(el){ io.observe(el); });
+    root.setAttribute('data-anim', '');
+    setTimeout(function(){ items.forEach(function(el){ el.setAttribute('data-in', ''); }); }, 9000);
+  }
+  // Phones
+  var phones = Array.prototype.slice.call(document.querySelectorAll('.phone'));
+  var dots = Array.prototype.slice.call(document.querySelectorAll('.dot'));
+  var n = phones.length, active = 0, leaving = null;
+  var slots = [
+    { transform: 'translateX(0) translateY(0) rotate(0deg) scale(1)', zIndex: 4, opacity: 1, filter: 'none' },
+    { transform: 'translateX(58px) translateY(14px) rotate(7deg) scale(0.9)', zIndex: 3, opacity: 0.92, filter: 'brightness(0.92)' },
+    { transform: 'translateX(-58px) translateY(26px) rotate(-7deg) scale(0.82)', zIndex: 2, opacity: 0.8, filter: 'brightness(0.85)' },
+    { transform: 'translateX(0) translateY(36px) rotate(0deg) scale(0.74)', zIndex: 1, opacity: 0, filter: 'brightness(0.8)' }
+  ];
+  var out = { transform: 'translateX(-118%) translateY(-10px) rotate(-12deg) scale(0.96)', zIndex: 5, opacity: 1, filter: 'none' };
+  function render(){
+    phones.forEach(function(p, i){
+      var pos = (i - active + n) % n, s = i === leaving ? out : slots[Math.min(pos, 3)];
+      p.style.transform = s.transform; p.style.zIndex = s.zIndex; p.style.opacity = s.opacity; p.style.filter = s.filter;
+      p.setAttribute('aria-hidden', pos === 0 && leaving === null ? 'false' : 'true');
+    });
+    dots.forEach(function(d, i){ d.setAttribute('aria-pressed', i === active ? 'true' : 'false'); });
+  }
+  function next(){
+    if (leaving !== null) return;
+    leaving = active; render();
+    setTimeout(function(){ active = (active + 1) % n; leaving = null; render(); }, 450);
+  }
+  function prev(){ if (leaving !== null) return; active = (active - 1 + n) % n; render(); }
+  function goTo(i){
+    if (leaving !== null || i === active) return;
+    if (i === (active + 1) % n) { next(); return; }
+    active = i; render();
+  }
+  var nb = document.getElementById('nextBtn'), pb = document.getElementById('prevBtn');
+  if (nb) nb.addEventListener('click', next);
+  if (pb) pb.addEventListener('click', prev);
+  dots.forEach(function(d, i){ d.addEventListener('click', function(){ goTo(i); }); });
+  if (n) render();
+})();
+
+</script>
+</body>
+</html>
